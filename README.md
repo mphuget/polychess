@@ -42,7 +42,7 @@ Board representation and legal moves are no longer provided by python-chess but 
 * Board representation (bitboards, 0x88, 120-square representation, 64-square representation)
 * MinMax (Negamax)
 * Alpha-Beta pruning
-* Chess rules (three fold repetition, fifty moves)
+* Chess rules (five fold repetition, seventy-five moves)
 * Opening book (Polyglot)
 * Endgame tablebases (Syzygy)
 * Forsyth-Edwards Notation (FEN) (https://www.chessprogramming.org/Forsyth-Edwards_Notation)
