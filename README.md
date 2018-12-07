@@ -16,12 +16,25 @@ The required features for PolyChess are:
 * PolyChess has an AI (easy to modify) that could play for the engine
 * It is possible to enter a FEN position and obtain an evaluation from PolyChess
 
-##Milestones for the project
+## Milestones for the project
 
 Milestone 1:
 
+PolyChess is able to play against user or another engine through UCI, has an opening book and an AI
 
-##New techniques/skills/terms to get acquainted with
+Milestone 2:
+
+PolyChess plays on Lichess (and FICS) 
+
+Milestone 3:
+
+PolyChess has an endgame tablebase
+
+Milestone 4:
+
+Board representation and legal moves are no longer provided by python-chess but are students' responsibilities
+
+## New techniques/skills/terms to get acquainted with
 
 * Chess (maybe)
 * Universal Chess Interface (UCI) (http://wbec-ridderkerk.nl/html/UCIProtocol.html)
@@ -35,5 +48,8 @@ Milestone 1:
 * Forsyth-Edwards Notation (FEN) (https://www.chessprogramming.org/Forsyth-Edwards_Notation)
 * Piece-Square table
 * Move ordering
+* Position evaluation
+* Transposition table
+* Zobrist key
 
 
