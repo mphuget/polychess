@@ -51,5 +51,6 @@ Board representation and legal moves are no longer provided by python-chess but 
 * Position evaluation
 * Transposition table
 * Zobrist key
+* Perft
 
 
