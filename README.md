@@ -8,9 +8,8 @@ The required features for PolyChess are:
 
 * PolyChess is able to play against a user, or to play against itself (through UCI and Winboard on Windows, or Arena on Mac)
 * The games played are stored in PGN format in a directory games, the PGN headers have to be filled
-* PolyChess can render the board either in text (on the console) or in SVG (thanks to python-chess)
+* PolyChess can render the board either in text (on the console) or in SVG (thanks to python-chess, in Jupyter Notebooks)
 * PolyChess has an opening book (first as a Polyglot book, then using your own format)
-* PolyChess has endgame tablebases. It uses Syzygy tablebases
 * PolyChess is able to play on Lichess (and eventually FICS)
 * PolyChess is modular, it is then easy to isolate a feature and to modify it
 * PolyChess has an AI (easy to modify) that could play for the engine
@@ -28,10 +27,6 @@ PolyChess plays on Lichess (and FICS)
 
 Milestone 3:
 
-PolyChess has an endgame tablebase
-
-Milestone 4:
-
 Board representation and legal moves are no longer provided by python-chess but are students' responsibilities
 
 ## New techniques/skills/terms to get acquainted with
@@ -44,7 +39,6 @@ Board representation and legal moves are no longer provided by python-chess but 
 * Alpha-Beta pruning
 * Chess rules (five fold repetition, seventy-five moves)
 * Opening book (Polyglot)
-* Endgame tablebases (Syzygy)
 * Forsyth-Edwards Notation (FEN) (https://www.chessprogramming.org/Forsyth-Edwards_Notation)
 * Piece-Square table
 * Move ordering
