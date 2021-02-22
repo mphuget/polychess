@@ -17,34 +17,5 @@ The required features for PolyChess are:
 
 ## Milestones for the project
 
-Milestone 1:
-
-PolyChess is able to play against user or another engine through UCI, has an opening book and an AI
-
-Milestone 2:
-
-PolyChess plays on Lichess (and FICS) 
-
-Milestone 3:
-
-Board representation and legal moves are no longer provided by python-chess but are students' responsibilities
-
-## New techniques/skills/terms to get acquainted with
-
-* Chess (maybe)
-* Universal Chess Interface (UCI) (http://wbec-ridderkerk.nl/html/UCIProtocol.html)
-* Portable General Notation (PGN)
-* Board representation (bitboards, 0x88, 120-square representation, 64-square representation)
-* MinMax (Negamax)
-* Alpha-Beta pruning
-* Chess rules (five fold repetition, seventy-five moves)
-* Opening book (Polyglot)
-* Forsyth-Edwards Notation (FEN) (https://www.chessprogramming.org/Forsyth-Edwards_Notation)
-* Piece-Square table
-* Move ordering
-* Position evaluation
-* Transposition table
-* Zobrist key
-* Perft
-
-
+Chapter 01 : the program plays randomly all the moves till game over, obviously the program finishes when
+there is a draw due to insufficient material on the board
