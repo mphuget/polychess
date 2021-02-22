@@ -2,6 +2,8 @@
 #https://github.com/niklasf/python-chess
 import chess
 
+from random import randint
+
 #set the board to its initial position
 #corresponding to: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
 board = chess.Board()
@@ -9,38 +11,37 @@ board = chess.Board()
 #print the board on the console
 print(board)
 
-#SVG render for the board is possible in Jupyter Notebook
-#board
+#side to play
+#0 for White to play
+#1 for Blxk to play
+side = 0
 
-#get all the legal moves for the current position
-moves = board.legal_moves
+#iterate on all the moves and play until the game is over
+while not board.is_game_over():
 
-#how many moves are available?
-print(moves.count())
+    if side == 0:
+        print("White to play")
+        
+        #change the side to move for next move
+        side = 1
+    else:
+        print("Black to play")
+        
+        #change the side to move for next move
+        side = 0
+        
+    #get all the possible moves
+    moves = board.legal_moves
+    
+    #get a move randomly
+    move = list(moves)[randint(0, len(list(moves))-1)]
 
-#iterate over all the moves
-for move in moves: 
-    
-    #display the move
-    print(move)
-    
-    #save the current position
-    current_board = board
-    
-    #do the move
+    #play the move
     board.push(move)
     
     #display the board
     print(board)
     
-    #number of black moves
-    print("Black moves:" + str(board.legal_moves.count()))
-    
-    #undo the move
-    board.pop()
-    
-    #do we have a winner?
-    if (board.is_game_over()):
-        print("The game is over")
-        print(board.result())
-    
+#the game is over
+print("Game over")
+
